@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1 class="title">Rock Paper Scissors</h1> 
+
+    <section class="game">
+      <section class="score">
+        <span class="team-name">you</span>
+        <div class="score__wrapper">
+          <span class="score__user">0</span>
+          <span>:</span>
+          <span class="score__computer">0</span>
+        </div>
+        <span class="team-name">computer</span>
+      </section>
+    
+      <h3 class="computer-move"></h3>
+      <h3 class="your-move"></h3>
+    
+      <div class="images">
+        <div class="image-wrapper">
+          <img id="rock" class="image" data-name="rock" src="images/rock.png" alt="rock image">
+        </div>
+        <div class="image-wrapper" >
+          <img id="paper" class="image" data-name="paper" src="images/paper.png" alt="paper image">
+        </div>
+        <div class="image-wrapper">
+          <img id="scissors" class="image" data-name="scissors" src="images/scissors.png" alt="scissors image">
+        </div>
+      </div>
+    
+      <h3 class="make-move">Make Your Move.</h3>
+    
+      <button class="reset-game">Reset Game</button>
+    </section>
+  </main>
+
+  <div class="modal-parent">
+    <div class="modal">
+      <section class="score">
+        <span class="team-name">you</span>
+        <div class="score__wrapper">
+          <span class="score__user-modal"></span>
+          <span>:</span>
+          <span class="score__computer-modal"></span>
+        </div>
+        <span class="team-name">computer</span>
+      </section>
+      <p class="winner-txt"></p>
+      <button class="play-again">Play Again</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

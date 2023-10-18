@@ -1,0 +1,114 @@
+:root {
+    --body-back-color: #021b42;
+    --body-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    background-color: var(--body-back-color);
+    color: var(--body-color);
+}
+
+.title {
+    color: #000;
+    background-color: #fff;
+    padding-block: 1rem;
+    font-weight: bolder;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    margin: 1rem auto;
+    padding-block: 0.5rem;
+}
+
+.score__wrapper {
+    width: 10rem;
+    border: 0.1rem solid #fff;
+    font-size: 2rem;
+    border-radius: 0.1rem;
+}
+
+.computer-move, .your-move {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding-block: 3rem 1rem;
+}
+
+.image-wrapper {
+    cursor: pointer;
+    width: 8rem;
+    border: 0.1rem solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.make-move {
+    font-weight: normal;
+} 
+
+.play-again, .reset-game {
+    margin-top: 1rem;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.modal-parent{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    
+    display: none; 
+}
+
+.modal {
+    background: #000;
+    width: 30%;
+    padding: 30px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-family: arial;
+    position: relative;
+    animation: 0.5s drop;
+    text-align: center;
+}
+@keyframes drop {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 50%;
+    }
+}
